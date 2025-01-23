@@ -1,0 +1,170 @@
+/* Stile globale per il corpo e i font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #1975ff; /* Colore di sfondo neutro */
+  color: #333; /* Colore del testo scuro per un buon contrasto */
+}
+
+/* Stile per la navigazione */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffb700; /* Colore accento per hover */
+}
+
+/* Pulsanti generali */
+.button, .BtnElimina, .Btnmodifica {
+  background-color: #292929;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover, .BtnElimina:hover, .Btnmodifica:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+
+/* Pulsante modifica con stile diverso */
+.Btnmodifica {
+  background-color: #ffb700;
+}
+
+.Btnmodifica:hover {
+  background-color: #fff;
+  color: #ffb700;
+}
+
+/* Stile per i contenitori della pagina */
+.div-home, .lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #fff;
+  color: #000000;
+  
+}
+
+.lista {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center; /* Centra orizzontalmente */
+  justify-content: center; /* Centra verticalmente */
+  width: 100%;
+}
+.lista h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* Stile per la tabella utenti */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Stile per i moduli */
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.group button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.group button:hover {
+  background-color: #555;
+}
+
+/* Stile per il messaggio di stato */
+p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+p.success {
+  color: green;
+}
+
+p.error {
+  color: red;
+}
