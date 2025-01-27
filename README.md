@@ -63,10 +63,6 @@ Implementare le operazioni CRUD per gli utenti.
 - **Integrazione Frontend e Backend**: Capacità di integrare un frontend React con un backend tramite chiamate API RESTful.
 - **Semplicità e Chiarezza del Codice**: Scrivere codice pulito e ben organizzato con componenti React chiari e separati.
 
-## Tempi e Consegne
-
-- **Tempo stimato**: 1-3 giorni lavorativi.
-- **Consegna**: Un repository Git con il codice sorgente, un file README con le istruzioni per l'installazione e una breve documentazione tecnica.
 
 ## Istruzioni per l'Installazione
 
