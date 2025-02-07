@@ -1,8 +1,9 @@
 import express from 'express';
 import { VerificaConnesione } from './middleware/VerificaConnessione';
 import cors from 'cors';
+
 import router from './rotte/router';
-import Autenticazione from './rotte/autenticazione';
+//import Autenticazione from './rotte/autenticazione';
 
 const app = express();
 const port = 3000;
@@ -20,8 +21,8 @@ app.use(cors({
 }));
 
 
+//app.use('/api/auth',Autenticazione);
 app.use('/api', router); 
-app.use('/api/auth',Autenticazione);
 
 
 const startServer = async () => {

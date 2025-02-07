@@ -4,9 +4,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { Validazione } from '../middleware/Validazione';
 import dotenv from 'dotenv';
-
 dotenv.config();
-
 const router = Router();
 //const JWT_SECRET = process.env.JWT_SECRET || 'default_secret';
 
@@ -21,6 +19,7 @@ router.get('/users', async (req: Request, res: Response) => {
   }
 });
 
+
 router.post('/users', Validazione, async (req: Request, res: Response) => {
   const { name, email, age } = req.body;
   try {
@@ -31,6 +30,7 @@ router.post('/users', Validazione, async (req: Request, res: Response) => {
     res.status(500).json({ error: 'Errore interno del server' });
   }
 });
+
 
 router.put('/users/:id', async (req: Request, res: Response) => {
   const userId = parseInt(req.params.id);
@@ -50,9 +50,9 @@ router.put('/users/:id', async (req: Request, res: Response) => {
   }
 });
 
+
 router.delete('/users/:id', async (req: Request, res: Response) => {
   const userId = parseInt(req.params.id);
-
   try {
     const risultato = await pool.query('DELETE FROM users WHERE id = $1 RETURNING *', [userId]);
 
