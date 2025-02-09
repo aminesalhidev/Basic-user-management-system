@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import ListaUtenti from './components/ListaUtenti';
 import AggiungiUtente from './components/AggiungiUtente';
 import Navbar from './components/Navbar';
-import Login from './pagine/login';
-import Registrazione from './pagine/registrazione';
+//import Login from './pagine/login';
+//import Registrazione from './pagine/registrazione';
 import './App.css';
 
 
@@ -17,10 +17,10 @@ const App: React.FC = () => {
       < Navbar/>
         <Routes>
 
-          {/*implementazione del token 70% */}
+          {/*implementazione del token 70% 
         <Route path="/registrazione" element={<Registrazione />} />
         <Route path="/accedi" element={<Login />} />
-
+        */}
 
 
           <Route path="/" element={<Home />} />
