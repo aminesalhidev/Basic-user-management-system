@@ -77,13 +77,17 @@ Implementare le operazioni CRUD per gli utenti.
 1. **Clona il repository**:
 
    ```bash
-   git clone https://github.com/tuo-utente/progetto-gestione-utenti.git
-   cd progetto-gestione-utenti
-
+   git clone https://github.com/aminesalhidev/Basic-user-management-system
+   cd Basic-user-management-system
    ```
 
 2. **Installazione delle dipendenze**:
    ```bash
    - npm install -y
+   ```
+
+3. **Avvio Del Progetto
+ ```bash
    - npm start dev
    ```
+
