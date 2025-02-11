@@ -6,7 +6,6 @@ import { Validazione } from '../middleware/Validazione';
 import dotenv from 'dotenv';
 dotenv.config();
 const router = Router();
-//const JWT_SECRET = process.env.JWT_SECRET || 'default_secret';
 
 
 router.get('/users', async (req: Request, res: Response) => {

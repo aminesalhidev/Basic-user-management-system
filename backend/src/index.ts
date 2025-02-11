@@ -3,7 +3,6 @@ import { VerificaConnesione } from './middleware/VerificaConnessione';
 import cors from 'cors';
 
 import router from './rotte/router';
-//import Autenticazione from './rotte/autenticazione';
 
 const app = express();
 const port = 3000;
