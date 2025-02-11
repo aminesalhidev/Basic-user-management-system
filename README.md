@@ -2,22 +2,22 @@
 
 Il progetto consiste nello sviluppo di un sistema base di gestione utenti. L'applicazione permette di visualizzare una lista di utenti e di aggiungerne di nuovi. Il backend gestisce le operazioni CRUD (Create, Read, Update, Delete) sugli utenti utilizzando TypeScript e SQL, mentre il frontend mostra i dati e fornisce un'interfaccia semplice per l'interazione.
 
-## Requisiti del Progetto
+## Progetto & Requisiti 
 
 ### 1. Backend in TypeScript
 
-#### Framework:
+#### Framework che sono stati usati:
 
 - Node.js con Express.
 
-#### API RESTful da implementare:
+#### API RESTful che Sono state Implementate :
 
 - `GET /users`: Recupera la lista di tutti gli utenti.
 - `POST /users`: Aggiunge un nuovo utente. (Richiede un payload JSON con i dettagli dell'utente).
 - `PUT /users/:id`: Modifica i dettagli di un utente esistente tramite il suo ID.
 - `DELETE /users/:id`: Rimuove un utente dal sistema tramite il suo ID.
 
-#### Validazione dei Dati:
+#### Validazione dei Dati & Controllo:
 
 - Assicurarsi che tutti i campi obbligatori siano presenti e validi.
 
@@ -31,7 +31,7 @@ Il progetto consiste nello sviluppo di un sistema base di gestione utenti. L'app
 
 - PostgreSQL.
 
-#### Schema della Tabella `users`:
+#### Devi creare un Schema della Tabella `users` sul database Postgres Par far funziona il Software:
 
 - `id`: Chiave primaria, auto-incrementale.
 - `name`: Nome dell'utente.
@@ -61,11 +61,8 @@ Implementare le operazioni CRUD per gli utenti.
 - Effettuare chiamate API per recuperare, aggiungere ed eliminare utenti.
 - Gestire gli stati di caricamento e gli errori durante le chiamate API.
 
-#### Semplicità dell'Interfaccia:
 
-- L'interfaccia è minimale e non è necessario utilizzare framework avanzati per il design.
-
-### 4. Obiettivi del Test
+### 4. Obiettivi di questo progetto sono :
 
 - **Competenze in TypeScript** (Backend e Frontend): Capacità di lavorare con TypeScript sia nel backend (Node.js) che nel frontend (React).
 - **Competenze in SQL**: Abilità di gestire un database SQL e scrivere query semplici per le operazioni CRUD.
@@ -90,4 +87,6 @@ Implementare le operazioni CRUD per gli utenti.
    ```bash
    - npm start dev
    ```
+
+   
 
