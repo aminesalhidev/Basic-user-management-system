@@ -2,7 +2,7 @@ import { Router, Request, Response } from 'express';
 import pool from '../configurazione/db';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { Validazione } from '../middleware/Validazione';
+//import { Validazione } from '../middleware/Validazione';
 import dotenv from 'dotenv';
 dotenv.config();
 const router = Router();
@@ -19,7 +19,7 @@ router.get('/users', async (req: Request, res: Response) => {
 });
 
 
-router.post('/users', Validazione, async (req: Request, res: Response) => {
+router.post('/users', async (req: Request, res: Response) => {
   const { name, email, age } = req.body;
   try {
     const risultato = await pool.query('INSERT INTO users (name, email, age) VALUES ($1, $2, $3) RETURNING *', [name, email, age]);
